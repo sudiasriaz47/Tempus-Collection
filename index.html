@@ -64,6 +64,13 @@ body {
 .article:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
+<section class="contact-section">
+  <h2>Place Your Order</h2>
+  <div class="contact-buttons">
+    <a href="https://wa.me/923195334325" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+    <a href="https://www.instagram.com/tempuscollections.pk/" target="_blank" class="contact-btn insta">Instagram</a>
+  </div>
+</section>
 }
 /* Footer */
 footer {
@@ -72,6 +79,62 @@ footer {
     background: #08132b;
 }
 </style>
+.contact-section {
+  text-align: center;
+  margin: 60px 20px;
+}
+
+.contact-section h2 {
+  font-size: 3rem; /* Big heading */
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  font-size: 2rem; /* Large buttons */
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0b1d3f;
+  background-color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  background-color: #0b1d3f;
+  color: #ffffff;
+}
+
+/* Optional: different colors for WhatsApp and Instagram */
+.contact-btn.whatsapp {
+  background-color: #25D366; /* WhatsApp green */
+  color: #ffffff;
+}
+
+.contact-btn.whatsapp:hover {
+  background-color: #0b1d3f;
+  color: #25D366;
+}
+
+.contact-btn.insta {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: #ffffff;
+}
+
+.contact-btn.insta:hover {
+  background-color: #0b1d3f;
+  color: #f58529; /* Instagram color on hover */
+}
+
 </head>
 <body>
 <header>
