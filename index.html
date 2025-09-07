@@ -4,49 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tempus</title>
+
+<!-- Elegant Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
+/* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', serif;
     background-color: #0b1d3f;
     color: #ffffff;
     line-height: 1.6;
 }
-/* Hero Section */
-<div class="hero">
-  <h1>Tempus</h1>
-  <div class="underline"></div>
-  <p class="tagline">Time isn’t just measured. It’s worn.</p>
-</div>
 
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('hero.jpg') center/cover no-repeat; /* Replace with your image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
-<div class="hero">
-  <h1 class="hero-title">Tempus</h1>
-  <div class="underline"></div>
-  <p class="tagline">Time isn’t just measured. It’s worn.</p>
-</div>
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.underline {
+    width: 150px; /* Fixed width underline */
+    height: 4px;
+    background: #ffffff;
+    margin: 20px auto;
+}
 
 .tagline {
     font-size: 1.5rem;
     font-style: italic;
     margin-top: 10px;
 }
+
 /* Articles Section */
 .articles {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .articles h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
 }
+
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .article {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
@@ -54,55 +76,119 @@ body {
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
 }
+
 .article:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
-<section class="contact-section">
-  <h2>Place Your Order</h2>
-  <div class="contact-buttons">
-    <a href="https://wa.me/923195334325" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
-    <a href="https://www.instagram.com/tempuscollections.pk/" target="_blank" class="contact-btn insta">Instagram</a>
-  </div>
-</section>
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    font-size: 2rem;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0b1d3f;
+    background-color: #ffffff;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background-color: #0b1d3f;
+    color: #ffffff;
+}
+
+.contact-btn.whatsapp {
+    background-color: #25D366;
+    color: #ffffff;
+}
+
+.contact-btn.whatsapp:hover {
+    background-color: #0b1d3f;
+    color: #25D366;
+}
+
+.contact-btn.insta {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    color: #ffffff;
+}
+
+.contact-btn.insta:hover {
+    background-color: #0b1d3f;
+    color: #f58529;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 30px 20px;
     background: #08132b;
 }
-</style>t
+</style>
 </head>
 <body>
+
+<!-- Hero Section -->
 <header>
 <div class="hero">
-<h1>Tempus</h1>
-<div class="underline"></div>
-<p class="tagline">Time isn’t just measured. It’s worn.</p>
+    <h1>Tempus</h1>
+    <div class="underline"></div>
+    <p class="tagline">Time isn’t just measured. It’s worn.</p>
 </div>
 </header>
+
+<!-- Articles Section -->
 <main>
 <section class="articles">
 <h2>Our Collection</h2>
 <div class="article-grid">
-<div class="article">Article 1</div>
-<div class="article">Article 2</div>
-<div class="article">Article 3</div>
-<div class="article">Article 4</div>
-<div class="article">Article 5</div>
-<div class="article">Article 6</div>
+    <div class="article">Article 1<br>Price: 3000 PKR</div>
+    <div class="article">Article 2<br>Price: 3000 PKR</div>
+    <div class="article">Article 3<br>Price: 3000 PKR</div>
+    <div class="article">Article 4<br>Price: 3000 PKR</div>
+    <div class="article">Article 5<br>Price: 3000 PKR</div>
+    <div class="article">Article 6<br>Price: 3000 PKR</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+<h2>Place Your Order</h2>
+<div class="contact-buttons">
+    <a href="https://wa.me/923001234567" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+    <a href="https://www.instagram.com/yourusername/" target="_blank" class="contact-btn insta">Instagram</a>
 </div>
 </section>
 </main>
+
+<!-- Footer -->
 <footer>
 <p>&copy; 2025 Tempus. All rights reserved.</p>
 </footer>
+
 <script>
 console.log("Tempus website loaded");
 </script>
+
 </body>
 </html>
-<div class="contact">
-  <p>Place your order via:</p>
-  <a href="https://wa.me/923195334325" target="_blank">WhatsApp</a> |  
-  <a href="https://www.instagram.com/tempuscollections.pk/" target="_blank">Instagram</a> 
-</div>
