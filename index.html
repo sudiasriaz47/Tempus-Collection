@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempus</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1d3f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.underline {
+    width: 150px;
+    height: 4px;
+    background: #ffffff;
+    margin: 20px auto;
+}
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+/* Articles Section */
+.articles {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.articles h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.article {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.article:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #08132b;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="hero">
+<h1>Tempus</h1>
+<div class="underline"></div>
+<p class="tagline">Time isn’t just measured. It’s worn.</p>
+</div>
+</header>
+<main>
+<section class="articles">
+<h2>Our Collection</h2>
+<div class="article-grid">
+<div class="article">Article 1</div>
+<div class="article">Article 2</div>
+<div class="article">Article 3</div>
+<div class="article">Article 4</div>
+<div class="article">Article 5</div>
+<div class="article">Article 6</div>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 Tempus. All rights reserved.</p>
+</footer>
+<script>
+console.log("Tempus website loaded");
+</script>
+</body>
+</html>
